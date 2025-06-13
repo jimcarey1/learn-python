@@ -26,6 +26,18 @@ name = 'johny' #we gave a textual value to our variable this time.
 name = 56      #not only can we change the value but also datatype.
 ```
 
+**print function in detail**
+```py
+for i in range(5):
+    print(i)   #Output: prints 0 to 4 in newline.
+
+for i in range(5):
+    print(i, end=' ') #Output: print 0 to 4 in sameline.
+
+for i in range(5):
+    print(i, i+1, sep='-', end=' ') #Output: You observe the output.
+```
+
 
 ## 2. Data types
 **What are data types in python ?**
@@ -349,3 +361,27 @@ for fruit in fruits:
 | **Can be Nested**          | Yes                            | Yes                           |
 | **Supports Iteration**     | Yes                            | Yes                           |
 | **Used in**                | Dictionary keys, fixed data structures | General-purpose collections  |
+
+
+## Operations supported by list and tuple
+| Operation                          | Tuple | List |
+|-----------------------------------|:-----:|:----:|
+| Indexing (`obj[i]`)               |  ✅   | ✅   |
+| Slicing (`obj[start:stop]`)       |  ✅   | ✅   |
+| Iteration (`for x in obj`)        |  ✅   | ✅   |
+| Length (`len(obj)`)               |  ✅   | ✅   |
+| Membership Test (`x in obj`)      |  ✅   | ✅   |
+| Concatenation (`obj1 + obj2`)     |  ✅   | ✅   |
+| Repetition (`obj * n`)            |  ✅   | ✅   |
+| Min/Max (`min(obj)`, `max(obj)`)  |  ✅   | ✅   |
+| Count (`obj.count(x)`)            |  ✅   | ✅   |
+| Index (`obj.index(x)`)            |  ✅   | ✅   |
+| Append (`obj.append(x)`)          |  ❌   | ✅   |
+| Extend (`obj.extend([...])`)      |  ❌   | ✅   |
+| Insert (`obj.insert(i, x)`)       |  ❌   | ✅   |
+| Remove (`obj.remove(x)`)          |  ❌   | ✅   |
+| Pop (`obj.pop()`)                 |  ❌   | ✅   |
+| Clear (`obj.clear()`)             |  ❌   | ✅   |
+| Sort (`obj.sort()`)               |  ❌   | ✅   |
+| Reverse (`obj.reverse()`)         |  ❌   | ✅   |
+| Immutability                      |  ✅   | ❌   |
