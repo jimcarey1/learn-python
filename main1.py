@@ -1,7 +1,5 @@
-fruits = ['apple', 'mango', 'guava']
-fruits.insert(1, 'carrot')
-
-print(fruits)
+fruits = ['apple', 'banana', 'carrot']
+print(fruits) #Output: ['apple', 'banana', 'carrot']
 
 fruits.clear()
-print(fruits)
+print(fruits)  #Output: []

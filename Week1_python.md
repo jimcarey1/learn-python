@@ -13,6 +13,7 @@
     * Different types of sequences(List, Str, Tuple, Range)
     * Mutable vs Immutable sequences
     * Different operations on them.(Indexing, Concatenation, Length, Iteration)
+    * List vs Tuples
 
 ## 1. Variables
 **What is a variable ?**
@@ -317,3 +318,34 @@ print(fruits) #Output: ['apple', 'banana', 'carrot']
 fruits.insert(1, 'guava')
 print(fruits) #Output: ['apple', 'guava', 'banana', 'carrot']
 ```
+
+***Deleting every element in a list***
+```py
+fruits = ['apple', 'banana', 'carrot']
+print(fruits) #Output: ['apple', 'banana', 'carrot']
+
+fruits.clear()
+print(fruits)  #Output: []
+```
+
+**Using for loop on a list**
+```py
+fruits = ['apple', 'banana', 'carrot']
+
+for fruit in fruits:
+    print(fruit)
+```
+
+### List vs Tuple
+| Feature                     | Tuple                          | List                          |
+|----------------------------|--------------------------------|-------------------------------|
+| **Mutability**             | Immutable                      | Mutable                       |
+| **Syntax**                 | `(1, 2, 3)`                    | `[1, 2, 3]`                   |
+| **Performance**            | Faster than lists              | Slightly slower               |
+| **Use Case**               | Fixed data                     | Dynamic data                  |
+| **Memory Consumption**     | Less memory                    | More memory                   |
+| **Methods Available**      | Few (e.g., `count()`, `index()`) | Many (e.g., `append()`, `extend()`, `pop()`) |
+| **Hashable (can be key)**  | Yes (if all elements are hashable) | No                            |
+| **Can be Nested**          | Yes                            | Yes                           |
+| **Supports Iteration**     | Yes                            | Yes                           |
+| **Used in**                | Dictionary keys, fixed data structures | General-purpose collections  |
