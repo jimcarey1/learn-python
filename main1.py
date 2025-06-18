@@ -1,2 +1,2 @@
-age = 12
-print(Age)
+name = 'Jhonny'
+print(name[10])
