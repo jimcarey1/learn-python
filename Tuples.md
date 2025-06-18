@@ -1,5 +1,5 @@
 
-# Tuples in Python - Grade 7 Notes
+# Tuples in Python
 
 ## What is a Tuple?
 
