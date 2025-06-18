@@ -45,7 +45,67 @@ print(name[10]) #IndexError: string index out of range
 * If the index is more than 5, you will get IndexError as you can see above.
 
 ## Basic operations on strings
-# 🧰 Basic String Operations in Python
+
+### Concatenation
+* Concatenation is the process of adding two strings.
+```py
+name1 = 'Jhony'
+name2 = 'bones'
+full_name = name1 + name2 
+print(full_name) #Output: Jhonybones
+```
+
+### Repetition
+```py
+name1 = 'Jhony'
+name1_3times = name1 * 3
+print(name1_3times) #Output: 'JhonyJhonyJhony'
+```
+
+### Membership
+* If we want to check any character or a substring in another string.
+```py
+name1 = 'Jhony'
+is_present = 'j' in name1 
+print(is_present) #Output: False
+
+is_present = 'J' in name1
+print(is_present) #Output: True
+```
+
+### Convert to lower case
+* If we want to convert a string to lower case.
+```py
+name1 = 'Jhony'
+print(name1)
+
+lower_name1 = name1.lower()
+print(lower_name1)
+```
+
+### Replace
+* If we want to replace a part of the string to something else.
+```py
+name1 = 'Jhony'
+print(name1)
+
+replaced_name1 = name1.replace('J', 'B')
+print(replaced_name1)
+```
+
+### Check if the starts with a particular pattern.
+* If we want to check if the string starts with a particular pattern.
+```py
+name1 = 'Jhony'
+print(name1)
+
+if name1.startswith('b'):
+    print(name1)
+else:
+    print('It is not starting with b.')
+```
+
+## Basic String Operations in Python
 
 | Operation           | Syntax / Example                      | Description                                             |
 |---------------------|----------------------------------------|---------------------------------------------------------|
